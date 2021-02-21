@@ -21,18 +21,6 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
-//Testing the connection
-async function test() {
-    try {
-        await sequelize.authenticate();
-        console.log('Connection has been established successfully.');
-      } catch (error) {
-        console.error('Unable to connect to the database:', error);
-      }
-}
-test()
-  
-
 // 생성한 시퀄라이즈를 이용해 모델 가져오기.
 
  fs
