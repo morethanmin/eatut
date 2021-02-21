@@ -1,11 +1,11 @@
 const Sequelize = require('sequelize');
 
 module.exports = ((sequelize,DataTypes)=>{
-    return sequelize.define('menu',{
-        name:{
-            type: DataTypes.STRING(40),
+    return sequelize.define('location',{
+        latitude:{
+            type: DataTypes.INTEGER,
         },
-        price:{
+        longitude:{
             type: DataTypes.INTEGER,
         }
     },{
